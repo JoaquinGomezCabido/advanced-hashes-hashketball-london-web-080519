@@ -151,3 +151,12 @@ def team_colors(team)
     end
   end
 end
+
+def team_names
+  hash = game_hash
+  response_array = []
+
+  hash.each do |a, b|
+      response_array.push(b[:team_name])
+  end
+end
