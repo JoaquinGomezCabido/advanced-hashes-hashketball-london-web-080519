@@ -236,5 +236,5 @@ def most_points_scored
       end
     end
   end
-  return big_rebounds
+  return scorer
 end
