@@ -285,3 +285,29 @@ def player_with_longest_name
   end
   return longest_name
 end
+
+def player_with_longest_name
+  hash = game_hash
+  length = 0
+  longest_name = ""
+  longest_name_steals = 0
+  max_steals = 0
+
+  hash.each do |a, b|
+    b.each do |c, d|
+      if c == :players
+        d.each do |e,f|
+          if e[:player_name].length > length
+            length = e[:player_name].length
+            longest_name = e[:player_name]
+            longest_name_steals = e[:steals]
+          end
+          if e[:steals] > max_steals
+            max_steals = e[:steals]
+          end
+        end
+      end
+    end
+  end
+  return max_steals > longest_name_steals ? false : true
+end
