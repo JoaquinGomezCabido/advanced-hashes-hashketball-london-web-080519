@@ -119,3 +119,10 @@ def game_hash
   }
   stats
 end
+
+def num_poins_scored(name)
+  hash = game_hash
+
+  hash.each do |a, b|
+        hash[a][:players][b]
+end
