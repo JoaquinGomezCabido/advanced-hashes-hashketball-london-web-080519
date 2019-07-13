@@ -146,7 +146,7 @@ def team_colors(team)
   hash = game_hash
 
   hash.each do |a, b|
-    if b[:team_name] == team_name
+    if b[:team_name] == team
       return b[:colors]
     end
   end
