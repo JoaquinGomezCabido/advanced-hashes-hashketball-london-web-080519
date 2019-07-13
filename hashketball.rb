@@ -238,3 +238,12 @@ def most_points_scored
   end
   return scorer
 end
+
+def winning_team
+  hash = game_hash
+
+  hash.each do |a, b|
+    
+  end
+end
+
