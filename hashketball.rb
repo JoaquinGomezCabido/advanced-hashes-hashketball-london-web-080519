@@ -123,6 +123,8 @@ end
 def num_poins_scored(name)
   hash = game_hash
 
-  hash.each do |a, b|
-        hash[a][:players][b]
+  hash.key.each do |a|
+        hash[a][:players].key.each do |b|
+          if hash[a][:players][b] == name
+            return hash[a][:players][b][:points]
 end
