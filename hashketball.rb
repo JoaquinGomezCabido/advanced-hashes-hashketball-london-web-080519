@@ -117,5 +117,3 @@ def game_hash
   }
   stats
 end
-
-good_practices
