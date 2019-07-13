@@ -171,7 +171,9 @@ def player_numbers(team)
     if b[:team_name] == team
       b.each do |c, d|
         if c == :players
-          response_array.push(d[:number])
+          d.each do |e|
+            response_array.push(e[:number])
+          end
         end
       end      
     end
