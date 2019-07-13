@@ -117,7 +117,11 @@ def num_points_scored(name)
     b.each do |c, d|
       if c == :players
         d.each do |e|
-          if e
+          if e[:player_name] == name
+            return e[:points]
+          end
+        end
+      end
     end
   end
 end
