@@ -159,4 +159,6 @@ def team_names
   hash.each do |a, b|
       response_array.push(b[:team_name])
   end
+
+  return response_array
 end
