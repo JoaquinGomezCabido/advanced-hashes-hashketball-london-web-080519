@@ -127,4 +127,8 @@ def num_poins_scored(name)
         hash[a][:players].key.each do |b|
           if hash[a][:players][b] == name
             return hash[a][:players][b][:points]
+          end
+        end
+      end
+    end
 end
