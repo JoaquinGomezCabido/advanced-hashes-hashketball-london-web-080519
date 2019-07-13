@@ -241,8 +241,27 @@ end
 
 def winning_team
   hash = game_hash
+  winner = ""
+  points_home = 0
+  points_away = 0
 
-  hash.each do |a, b|
-    
+  hash.each do |a,b|
+    b.each do |c, d|
+      if c == :players
+        d.each do |e, f|
+          if a == :home
+            points_home += e[:points]
+          elsif b == :away
+            points_away += e[:points]
+          end
+        end
+      end
+    end
   end
+
+  if points_home > points_away
+    return hash[:home][:team_name]
+  elsif points_away > points_home
+    return hash[:away][:team_name]
+  end  
 end
