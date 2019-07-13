@@ -219,7 +219,7 @@ def big_shoe_rebounds
   return big_rebounds
 end
 
-def big_shoe_rebounds
+def most_points_scored
   hash = game_hash
   most_points = 0
   scorer = ""
