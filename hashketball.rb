@@ -263,5 +263,5 @@ def winning_team
     return hash[:home][:team_name]
   elsif points_away > points_home
     return hash[:away][:team_name]
-  end  
+  end
 end
