@@ -162,3 +162,20 @@ def team_names
 
   return response_array
 end
+
+def player_numbers(team)
+  hash = game_hash
+  response_array = []
+
+  hash.each do |a, b|
+    if b[:team_name] == team
+      b.each do |c, d|
+        if c == :players
+          response_array.push(d[:number])
+        end
+      end      
+    end
+  end
+
+  return response_array
+end
