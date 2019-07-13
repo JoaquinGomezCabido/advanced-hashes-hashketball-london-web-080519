@@ -190,7 +190,7 @@ def player_stats(name)
       if c == :players
         d.each do |e,f|
           if e[:player_name] == name
-            return e.delete(:player_name)
+            return e.without(:player_name)
           end
         end
       end
