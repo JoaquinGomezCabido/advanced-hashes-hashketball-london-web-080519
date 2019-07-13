@@ -199,13 +199,17 @@ def player_stats(name)
   end
 end
 
-hash.each do |a, b|
-  b.each do |c, d|
-    if c == :players
-      d.each do |e,f|
-        if e[:player_name] == name
-          e.delete(:player_name)
-          return e
+def big_shoe_rebounds
+  hash = game_hash
+
+  hash.each do |a, b|
+    b.each do |c, d|
+      if c == :players
+        d.each do |e,f|
+          if e[:player_name] == name
+            e.delete(:player_name)
+            return e
+          end
         end
       end
     end
