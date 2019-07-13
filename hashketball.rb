@@ -148,5 +148,6 @@ def team_colors(team)
   hash.each do |a, b|
     if b[:team_name] == team_name
       return b[:colors]
-    end  
+    end
+  end
 end
