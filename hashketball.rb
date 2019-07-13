@@ -120,7 +120,7 @@ def game_hash
   stats
 end
 
-def num_poins_scored(name)
+def num_points_scored(name)
   hash = game_hash
 
   hash.key.each do |a|
