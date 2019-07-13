@@ -201,13 +201,13 @@ end
 
 def big_shoe_rebounds
   hash = game_hash
+  max_shoe = 0
   big_rebounds = 0
 
   hash.each do |a, b|
     b.each do |c, d|
       if c == :players
         d.each do |e,f|
-          max_shoe = 0
           if e[:shoe] > max_shoe
             max_shoe = e[:shoe]
             big_rebounds = e[:rebounds]
