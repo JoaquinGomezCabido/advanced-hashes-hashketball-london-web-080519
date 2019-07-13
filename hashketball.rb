@@ -175,7 +175,7 @@ def player_numbers(team)
             response_array.push(e[:number])
           end
         end
-      end      
+      end
     end
   end
 
