@@ -133,7 +133,7 @@ def shoe_size(name)
     b.each do |c, d|
       if c == :players
         d.each do |e,f|
-          if d == name
+          if e[:player_name] == name
             return e[:shoe]
           end
         end
