@@ -181,3 +181,19 @@ def player_numbers(team)
 
   return response_array
 end
+
+def player_stats(name)
+  hash = game_hash
+
+  hash.each do |a, b|
+    b.each do |c, d|
+      if c == :players
+        d.each do |e,f|
+          if e[:player_name] == name
+            return e[:shoe]
+          end
+        end
+      end
+    end
+  end
+end
