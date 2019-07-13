@@ -123,11 +123,11 @@ end
 def num_points_scored(name)
   hash = game_hash
 
-  hash.keys.each do |a|
-        hash[a][:players].keys.each do |b|
-          if hash[a][:players][b] == name
-            return hash[a][:players][b][:points]
-          end
-        end
+  hash.each do |a, b|
+    b.each do |c, d|
+      if b[d] == name
+        return b[d][:points]
       end
+    end
+  end
 end
