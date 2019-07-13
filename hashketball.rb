@@ -130,5 +130,4 @@ def num_poins_scored(name)
           end
         end
       end
-    end
 end
