@@ -238,4 +238,3 @@ def big_shoe_rebounds
   end
   return big_rebounds
 end
-
