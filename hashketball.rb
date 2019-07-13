@@ -4,7 +4,7 @@ require "pry"
 
 def game_hash
   stats = {
-    home: {
+    away: {
       team_name: "Charlotte Hornets",
       colors: ["Turquoise", "Purple"],
       players: [
@@ -55,7 +55,7 @@ def game_hash
           slam_dunks: 12 }
       ]
     },
-    away: {
+    home: {
       team_name: "Brooklyn Nets",
       colors: ["Black", "White"],
       players: [
